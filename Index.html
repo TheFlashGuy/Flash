@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Duck Life</title>
+  <script src="https://happygamer1450.github.io/Ruffle-Embedded/ruffle/ruffle.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    ruffle-player {
+      width: 100%;
+      height: 100%;
+    }
+
+    button {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 9999;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<button onclick="document.documentElement.requestFullscreen()">
+  Fullscreen
+</button>
+
+<ruffle-player src="https://TheFlashGuy.github.io/Flash/duck-life.swf"></ruffle-player>
+
+</body>
+</html>
